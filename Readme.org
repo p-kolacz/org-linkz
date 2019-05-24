@@ -1,5 +1,6 @@
 * org-linkz
 This is my template for managing browser bookmarks in org-mode.
+[[https://user-images.githubusercontent.com/1722672/58349259-19218500-7e63-11e9-9953-e24743fd91ea.png]]
 * Features
 - Manage browser bookmarks in org file
 - 1-click capture from any browser
