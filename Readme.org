@@ -1,0 +1,57 @@
+* org-linkz
+This is my template for managing browser bookmarks in org-mode.
+* Features
+- Manage browser bookmarks in org file
+- 1-click capture from any browser
+- automatic generation of HTML
+  - live search
+  - menu for top level categories
+* Installation
+** Clone repo
+#+BEGIN_SRC shell
+git clone https://github.com/p-kolacz/org-linkz
+#+END_SRC
+** Configure Emacs
+Change src_shell{~/org/} to your folder of choice.
+#+BEGIN_SRC emacs-lisp
+  (server-start)  ;; starts emacs as server (if you didn't already)
+  (setq org-html-validation-link nil)  ;; removes validation link from exported html file
+  (require 'org-protocol)
+  (setq org-capture-templates
+          '(
+            ("o" "Link capture" entry
+             (file+headline "~/org/org-linkz/Linkz.org" "INBOX")
+             "* %a %U"
+             :immediate-finish t)
+  ))
+  (setq org-protocol-default-template-key "o")
+#+END_SRC
+
+** Add org-capture protocol to OS
+*** Linux
+Add src_shell{~/.local/share/applications/org-protocol.desktop} file with following content:
+
+#+BEGIN_SRC 
+[Desktop Entry]
+Name=org-protocol
+Exec=/path/to/emacsclient -n %u
+Type=Application
+Terminal=false
+Categories=System;
+MimeType=x-scheme-handler/org-protocol;
+#+END_SRC
+
+Run
+#+BEGIN_SRC shell
+update-desktop-database ~/.local/share/applications/
+#+END_SRC
+*** Windows
+https://orgmode.org/worg/org-contrib/org-protocol.html#orgf93bb1b
+
+** Setup browser
+Add bookmark for your favorite browser with following address:
+#+BEGIN_SRC js
+javascript:location.href="org-protocol:///capture?url="+encodeURIComponent(location.href)+"&title="+encodeURIComponent(document.title||"[untitled page]")
+#+END_SRC
+
+Add src_shell{~/org/org-linkz/Linkz.html} to your browser bookmarks.

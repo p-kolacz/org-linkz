@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lancelot&subset=latin-ext');
+
+/* https://lospec.com/palette-list/ink */
+
+* { margin: 0; padding: 0; border: 0; outline: 0; box-sizing: border-box; }
+
+html { font-size: 10px; }
+
+body {
+	font-family: 'Lancelot', cursive;
+	font-size: 2rem;
+	font-weight: normal;
+	background: #1f1f29;
+	color: #96a2b3;
+	overflow-y: scroll;
+}
+
+#content {
+	padding: 1rem 2rem;
+}
+
+#table-of-contents {
+	border-top: 1px dashed #596070;
+	border-bottom: 1px dashed #596070;
+	padding: 1rem 0;
+	margin-bottom: 3rem;
+}
+#table-of-contents h2 {
+	display: none;
+}
+#table-of-contents ul {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#table-of-contents li {
+	padding: 0 2rem;
+	flex-grow: 1;
+	border-right: 1px dashed #596070;
+	text-align: center;
+}
+#table-of-contents li:last-child {
+	border-right: 0;
+}
+
+wrapper {
+	display: block;
+	margin-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+h1 {
+	margin: 1.5rem 0 1.5rem 0;
+	text-align: center;
+	font-size: 4rem;
+}
+h2 {
+	font-size: 3.5rem;
+}
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2.5rem;
+}
+
+.outline-2 {
+	margin: 1em 0 0 1em;
+}
+.outline-3 {
+	margin: 0 0 0 1em;
+}
+
+.outline-4 {
+	margin: 0 0 0 1em;
+}
+
+#search {
+	font-size: 1em;
+	width: 500px;
+	padding: 5px;
+	font-family: 'Ubuntu Mono', monospace;
+	background: #413a42;
+	color: #eaf0d8;
+	margin: 0 auto;
+	display: block;
+	border: 1px dashed #596070;
+}
+
+ul {
+	list-style: none;
+	margin: 0 0 0 1em;
+}
+
+a {
+	color: #eaf0d8;
+	text-decoration: none;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 2rem;
+	line-height: 2.1rem;
+}
+
+.timestamp {
+	color: #96a2b3;
+	font-size: 1.5rem;
+}
+#postamble {
+	text-align: center;
+	margin: 2em 0 1em 0;
+}

@@ -1,0 +1,36 @@
+#+TITLE: Linkz
+#+HTML_DOCTYPE: html5
+#+OPTIONS: toc:1 num:nil val:nil html-style:nil H:1
+#+HTML_HEAD: <link rel="stylesheet" href="css/theme.css">
+#+HTML_HEAD: <script src="js/jquery-3.3.1.min.js"></script>
+#+HTML_HEAD: <script src="js/jquery.searchable.js"></script>
+#+HTML_HEAD: <script src="js/smooth-scroll.js"></script>
+#+HTML_HEAD: <script src="js/main.js"></script>
+#+HTML: <input id="search" autofocus>
+#+HTML_CONTAINER: wrapper
+#+HTML_CONTAINER_CLASS: cntclass
+
+* INBOX
+* DuckDuckGo
+** [[https://duckduckgo.com/][DuckDuckGo]] [2019-05-20 pon 17:49]
+* Emacs
+** [[https://www.gnu.org/software/emacs/][GNU Emacs - GNU Project]] [2019-05-20 pon 16:10]
+** [[https://www.gnu.org/doc/doc.en.html][Documentation of the GNU Project - GNU Project - Free Software Foundation]] [2019-05-20 pon 16:31]
+* Code
+** React Native
+*** [[https://facebook.github.io/react-native/docs/getting-started][Getting Started · React Native]] [2019-05-20 pon 16:29]
+*** [[https://docs.expo.io/versions/latest/][Getting to know Expo - Expo Documentation]] [2019-05-20 pon 16:29]
+*** [[https://reactnavigation.org/docs/en/getting-started.html][Getting started · React Navigation]] [2019-05-20 pon 16:29]
+* Reddit
+** [[https://www.reddit.com/r/emacs][M-x emacs-reddit]] [2019-05-20 pon 16:33]
+
+* COMMENT Local variables
+# Local variables:
+# eval: (add-hook 'after-save-hook (lambda () (org-html-export-to-html t)) t t)
+# end:
+
+
+
+
+
+
