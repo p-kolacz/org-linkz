@@ -12,7 +12,7 @@ This is my template for managing browser bookmarks in org-mode.
 git clone https://github.com/p-kolacz/org-linkz
 #+END_SRC
 ** Configure Emacs
-Change src_shell{~/org/} to your folder of choice.
+Change =~/org/= to your folder of choice.
 #+BEGIN_SRC emacs-lisp
   (server-start)  ;; starts emacs as server (if you didn't already)
   (setq org-html-validation-link nil)  ;; removes validation link from exported html file
@@ -29,7 +29,7 @@ Change src_shell{~/org/} to your folder of choice.
 
 ** Add org-capture protocol to OS
 *** Linux
-Add src_shell{~/.local/share/applications/org-protocol.desktop} file with following content:
+Add =~/.local/share/applications/org-protocol.desktop= file with following content:
 
 #+BEGIN_SRC 
 [Desktop Entry]
@@ -54,4 +54,4 @@ Add bookmark for your favorite browser with following address:
 javascript:location.href="org-protocol:///capture?url="+encodeURIComponent(location.href)+"&title="+encodeURIComponent(document.title||"[untitled page]")
 #+END_SRC
 
-Add src_shell{~/org/org-linkz/Linkz.html} to your browser bookmarks.
+Add =~/org/org-linkz/Linkz.html= to your browser bookmarks.
