@@ -28,14 +28,14 @@ Change =~/org/= to your folder of choice.
   (setq org-protocol-default-template-key "o")
 #+END_SRC
 
-** Add org-capture protocol to OS
+** Add org-protocol support to OS
 *** Linux
 Add =~/.local/share/applications/org-protocol.desktop= file with following content:
 
 #+BEGIN_SRC 
 [Desktop Entry]
 Name=org-protocol
-Exec=/path/to/emacsclient -n %u
+Exec=emacsclient -n %u
 Type=Application
 Terminal=false
 Categories=System;
@@ -48,7 +48,8 @@ update-desktop-database ~/.local/share/applications/
 #+END_SRC
 *** Windows
 https://orgmode.org/worg/org-contrib/org-protocol.html#orgf93bb1b
-
+*** MacOS
+https://github.com/xuchunyang/setup-org-protocol-on-mac
 ** Setup browser
 Add bookmark for your favorite browser with following address:
 #+BEGIN_SRC js
